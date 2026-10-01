@@ -147,7 +147,7 @@ div.gallery figcaption{
     margin: .5rem;
 }
 
-.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
     display: block;
 }
 
