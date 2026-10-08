@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="author" content="Spencer J. Adams">
+    <meta name="description" content="Meet the person behind Layer Lair, a 3D printing resource site based in Orem, Utah, built for beginners.">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Layer Lair - About Us</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="images/layer-lair-logo.png" alt="Layer Lair Logo" width="38" height="50">
+        <div>
+        <h1><span>Layer Lair</span></h1>
+        <p>Resources and Guides For All Your 3D Printing Needs.</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="works.html">How It Works</a></li>
+            <li><a href="printers.html">Printers</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Print Gallery</a></li>
+            <li class="active"><a href="submit.html">Submit Your Print</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2>Submit Your Print</h2>
+        <p>Here is where you can submit your project information so we can take a look at it and give you the guidence you need.</p>
+       
+        <form method="get" class="myForm" action="thanks.html">
+        
+        <fieldset>
+        <legend>Contact Information</legend>
+        <label>First Name*<input type="text" name="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" required></label>
+        <label>Email*<input type="text" name="email" required></label>
+        <label>Cell Number*<input type="tel" name="phone" required placeholder="123-456-7890"></label>
+        </fieldset>
+
+        <fieldset>
+        <legend>What kind of printer are you using?</legend>
+            <label><input type="radio" name="method" value="FDM">FDM printer</label>
+            <label><input type="radio" name="method" value="Resin">Resin printer</label>
+            <label><input type="radio" name="method" value="SLS">SLS printer</label>
+            <label><input type="radio" name="method" value="not-sure">I'm not sure yet</label>
+
+        </fieldset>
+
+        <fieldset>
+        <legend>What qualities are important for your project?</legend>
+            <label><input type="checkbox" name="strength" value="chosen"> Strength</label>
+            <label><input type="checkbox" name="detail" value="chosen"> High detail</label>
+            <label><input type="checkbox" name="flexibility" value="chosen"> Flexibility</label>
+            <label><input type="checkbox" name="cost" value="chosen"> Low cost</label>
+            <label><input type="checkbox" name="fast" value="chosen"> Fast printing</label>
+            <label><input type="checkbox" name="heat" value="chosen"> Heat resistant</label>
+
+           <label>What will this print be used for?
+           <select name="use">
+           <option value="none">Select a use</option>
+           <option value="part">Functional part</option>
+           <option value="decoration">Decoration</option>
+           <option value="prototype">Prototype</option>
+           <option value="model">Model</option>
+           <option value="tool">Tool</option>
+           <option value="part">Replacement part</option>
+           </select>
+           </label> 
+        </fieldset>
+
+        <label>Additional details
+            <textarea name="comments"></textarea>
+        </label>
+
+
+
+        <input type="submit" value="Send Print Details">
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <section>
+            <h2>Address:</h2>
+            <address>
+                123 Main Street, City<br>
+                State Province, Country<br>
+                Call us at <a href="tel:1234567890">123-456-7890</a> if you need further assistance and support.
+            </address>
+
+            <ul class="social-links">
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+            </ul>
+
+            <p>&copy; 2026 &bull; Spencer Adams &bull; Web Essentials</p>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
